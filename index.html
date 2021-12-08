@@ -10,9 +10,9 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="0" class="scrollspy-example" tabindex="0">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" id="navbar">
             <div class="container-fluid">
                 <a class="navbar-brand" style="color: blue;" href="#">Bootstrap Project</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -23,15 +23,14 @@
                 <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                     <div class="navbar-nav ms-auto">
                         <a class="nav-link" href="#home">Home</a>
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link" href="#work-card-1">Portfolio</a>
                         <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
-
+    <div id="home">d</div>
     <section class="home container" style="margin-top: 100px; margin-bottom: 100px;">
         <div class="row">
             <div class="col-12">
@@ -49,14 +48,13 @@
         <div class="row row-cols-1 row-cols-md-2 g-5">
             <div class="col">
                 <div class="card">
-                    <img src="./img/work1.png" class="card-img-top" alt="...">
+                    <img src="./img/work1.png" id="work-card-1" class="card-img-top" alt="Work 1 Preview">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Facebook 360</h5>
                         <span class="badge rounded-pill bg-light text-dark m-1">HTML</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">CSS</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">javaScript</span>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#work1">
                             Read More
                         </button>
@@ -65,14 +63,13 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./img/work2.png" class="card-img-top" alt="...">
+                    <img src="./img/work2.png" class="card-img-top" alt="Work 2 Preview">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Uber Navigation</h5>
                         <span class="badge rounded-pill bg-light text-dark m-1">HTML</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">CSS</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">javaScript</span>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#work2">
                             Read More
                         </button>
@@ -81,14 +78,13 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./img/work3.png" class="card-img-top" alt="...">
+                    <img src="./img/work3.png" class="card-img-top" alt="Work 3 Preview">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Multi-Post Stories</h5>
                         <span class="badge rounded-pill bg-light text-dark m-1">HTML</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">CSS</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">javaScript</span>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content.</p>
+                        <p class="card-text">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#work3">
                             Read More
                         </button>
@@ -97,14 +93,13 @@
             </div>
             <div class="col">
                 <div class="card">
-                    <img src="./img/work4.png" class="card-img-top" alt="...">
+                    <img src="./img/work4.png" class="card-img-top" alt="Work 4 Preview">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Tonic</h5>
                         <span class="badge rounded-pill bg-light text-dark m-1">HTML</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">CSS</span>
                         <span class="badge rounded-pill bg-light text-dark m-1">javaScript</span>
-                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
-                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#work4">
                             Read More
                         </button>
@@ -209,8 +204,9 @@
                   </div>
                   <footer class="container">
                       <div class="row">
-                          <div class="col-12 g-5">
-                            <div class="mb-3">
+                        <div class="col-12"><h2 class="mt-5" id="contact">Contact Us</h2></div>
+                          <div class="col-12">
+                            <div class="mb-3 mt-3">
                                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
                                 <input name="_toReply" type="email" class="form-control" id="email" placeholder="name@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
                               </div>
